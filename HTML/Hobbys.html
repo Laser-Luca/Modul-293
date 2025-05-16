@@ -21,42 +21,27 @@
 
   <title>Meine Webseite für Modul 293</title>
 </head>
-
 <body>
 
   <header>
-    <h1>Wilkommem auf meiner Webseite</h1>
+    <h1>Wilkomme auf meiner Webseite</h1>
     <nav>
       <a href="index.html">Start</a>
       <a href="get.html">GET-Beispiel</a>
       <a href="post.html">POST-Beispiel</a>
-      <a href="hobbys.html">Hobbys</a>
+      <a href="hobbys.html">Hobbys"></a>
     </nav>
   </header>
 
   <main>
-    <!-- GET -->
-    <section id="get">
-      <h2>GET-Beispiel</h2>
-      <form method="get">
-        <label for="get-name">Dein Name (wird in URL sichtbar):</label><br>
-        <input type="text" name="get-name" id="get-name">
-        <button type="submit">Absenden (GET)</button>
-      </form>
-
-      <script>
-        // GET-Parameter auslesen
-        const params = new URLSearchParams(window.location.search);
-        const getName = params.get("get-name");
-        if (getName) {
-          document.write("<p><strong>Hallo, " + getName + "!</strong> (GET-Anfrage erkannt)</p>");
-        }
-      </script>
+    <section id="hobbys">
+      <h2>Meine Hobbys</h2>
+      <ul>
+        <li>Programmieren</li>
+        <li>Rausgehen</li>
+        <li>Gamen</li>
+        <li>Wissen über Motorsport sammeln</li>
+      </ul>
     </section>
   </main>
-  <footer>
-    <p>@copy Luca</p>
-  </footer>
 </body>
-
-</html>

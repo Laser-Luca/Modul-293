@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Optimierung für Mobilgeräte -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Suchmaschinenbeschreibung -->
+  <meta name="description" content="Das ist eine Seite, für das Modul 293">
+
+  <!-- Autor der Seite -->
+  <meta name="author" content="Luca Wagner">
+
+  <!-- Thema der Seite -->
+  <meta name="subject" content="Das ist eine Seite, für das Modul 293">
+
+  <!-- Verhindert, dass Browser Inhalte automatisch übersetzt -->
+  <meta name="google" content="notranslate">
+  <meta name="firefox" content="notranslate">
+
+  <title>Meine Webseite für Modul 293</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wilkommem auf meiner Webseite</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="get.html">GET-Beispiel</a>
+      <a href="post.html">POST-Beispiel</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- GET -->
+    <section id="get">
+      <h2>GET-Beispiel</h2>
+      <form method="get">
+        <label for="get-name">Dein Name (wird in URL sichtbar):</label><br>
+        <input type="text" name="get-name" id="get-name">
+        <button type="submit">Absenden (GET)</button>
+      </form>
+
+      <script>
+        // GET-Parameter auslesen
+        const params = new URLSearchParams(window.location.search);
+        const getName = params.get("get-name");
+        if (getName) {
+          document.write("<p><strong>Hallo, " + getName + "!</strong> (GET-Anfrage erkannt)</p>");
+        }
+      </script>
+    </section>
+  </main>
+  <footer>
+    <p>@copy Luca</p>
+  </footer>
+</body>
+
+</html>

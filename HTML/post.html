@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Optimierung für Mobilgeräte -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Suchmaschinenbeschreibung -->
+  <meta name="description" content="Das ist eine Seite, für das Modul 293">
+
+  <!-- Autor der Seite -->
+  <meta name="author" content="Luca Wagner">
+
+  <!-- Thema der Seite -->
+  <meta name="subject" content="Das ist eine Seite, für das Modul 293">
+
+  <!-- Verhindert, dass Browser Inhalte automatisch übersetzt -->
+  <meta name="google" content="notranslate">
+  <meta name="firefox" content="notranslate">
+
+  <title>Meine Webseite für Modul 293</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wilkomme auf meiner Webseite</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="get.html">GET-Beispiel</a>
+      <a href="post.html">POST-Beispiel</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- POST -->
+    <section id="post">
+      <h2>POST-Beispiel (Simulation)</h2>
+      <p>POST-Anfragen senden Daten <strong>nicht über die URL</strong>, sondern im Hintergrund (Body). Hier simulieren
+        wir das ohne Server:</p>
+
+      <form id="postForm">
+        <label for="email">Deine E-Mail:</label><br>
+        <input type="email" id="email" required>
+        <button type="submit">Absenden (POST)</button>
+      </form>
+
+      <div id="postResult" class="hidden"></div>
+
+      <script>
+        // POST-Simulation mit JavaScript
+        const postForm = document.getElementById("postForm");
+        const postResult = document.getElementById("postResult");
+
+        postForm.addEventListener("submit", function (event) {
+          event.preventDefault(); // Verhindert echtes Absenden
+          const email = document.getElementById("email").value;
+          postResult.textContent = "Danke! Die E-Mail \"" + email + "\" wurde per POST übermittelt (simuliert).";
+          postResult.classList.remove("hidden");
+          postForm.reset();
+        });
+      </script>
+    </section>
+  </main>
+  <footer>
+    <p>@copy Luca</p>
+  </footer>
+</body>
+
+</html>

@@ -7,51 +7,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Suchmaschinenbeschreibung -->
-  <meta name="description" content="Das ist eine Seite, für das Modul 293">
+  <meta name="description" content="293, Barrierefreiheit, Webtechniken">
 
   <!-- Autor der Seite -->
   <meta name="author" content="Luca Wagner">
 
   <!-- Thema der Seite -->
-  <meta name="subject" content="Das ist eine Seite, für das Modul 293">
+  <meta name="subject" content="Modul 293">
 
   <!-- Verhindert, dass Browser Inhalte automatisch übersetzt -->
   <meta name="google" content="notranslate">
   <meta name="firefox" content="notranslate">
 
-  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../Code/CSS/style.css">
 
   <title>Meine Webseite für Modul 293</title>
 </head>
 
 <body>
-
   <header>
-    <nav>
-      <a href="index.html">Start</a>
-      <a href="get.html">GET-Beispiel</a>
-      <a href="post.html">POST-Beispiel</a>
-      <a href="medien.html">Medien</a>
-      <a href="formular.html">Formular</a>
-    </nav>
+    <div class="nav-wrapper">
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+      <nav id="main-nav">
+        <a href="index.html">Start</a>
+        <a href="get.html">GET</a>
+        <a href="post.html">POST</a>
+        <a href="formular.html">Formular</a>
+        <a href="medien.html">Medien</a>
+      </nav>
+    </div>
   </header>
-
-  <main>
-    <h1>Wilkomme auf meiner Webseite</h1>
-    <section>
-      <h2>Startseite</h2>
-      <p>
-        Diese Webseite wurde im Rahmen des Moduls 293 erstellt. Es zeigt verschiedene Webtechniken wie
-        GET- und POST-Anfragen, Formularverarbeitung sowie die Einbindung von Medien. Ziel ist eine moderne,
-        minimalistische und barrierefreie Umsetzung – inspiriert vom Stil von monkeytype.com.
-      </p>
-    </section>
-  </main>
-
+  <main><h1>Modul 293 – Webtechniken</h1><p>Willkommen auf meiner Webseite im Apple-Stil. Hier zeige ich GET- & POST-Anfragen, Formulare und eingebettete Medien.</p></main>
   <footer>
-    <p>&copy; 2025 Luca Wagner - Modul 293</p>
+    <p>&copy; 2025 Luca Wagner – Modul 293</p>
   </footer>
+  <script src="burger.js"></script>
 </body>
-
-
 </html>
